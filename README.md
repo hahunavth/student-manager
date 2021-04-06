@@ -13,4 +13,4 @@ git clone https://github.com/hahunavth/student-manager.git
 cd student-manager/b
 cmake .. -G Ninja
 ninja
-./person-list
+./student-list
