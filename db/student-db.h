@@ -13,4 +13,6 @@ extern student* get_student_list();
 
 extern int get_student_num ();
 
+extern void insert_student(int mssv, char *name, char *birth, char *address);
+
 #endif //STUDENT_DB_H_
