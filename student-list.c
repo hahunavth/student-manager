@@ -208,6 +208,7 @@ do_list_store (GtkWidget *do_widget)
 int main (int argc, char *argv[]) {
   gtk_init(&argc, &argv);
   do_list_store(window);
+  g_signal_connect(window, "destroy", gtk_main_quit, NULL);
   gtk_widget_show(window);
   gtk_main();
 

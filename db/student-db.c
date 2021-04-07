@@ -9,13 +9,13 @@
 #define DB_NAME "../db/test.db"
 #define TABLE_NAME "students"
 
-student studentList[10];
+student studentList[1000000];
 int studentNum = 0;
 
 static int callback(void *NotUsed, int argc, char **argv,
           char **azColName) {
   NotUsed = 0;
-  if(studentNum >= 10)
+  if(studentNum >= 1000000)
     return 1;
   char *name = calloc(100, sizeof(char));
   char *birth = calloc(100, sizeof(char));
